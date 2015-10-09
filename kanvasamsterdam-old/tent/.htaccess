@@ -1,8 +1,0 @@
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteCond %{REQUEST_URI} /$ [OR]
-RewriteCond %{REQUEST_FILENAME} (pdf)$ [NC]
-RewriteCond %{REQUEST_FILENAME} !index.php
-RewriteCond /home/vhosting/a/vhost0031014/domains/kanvasamsterdam.nl/htdocs/www/tent/index.php -f
-RewriteRule ^.*$ /tent/index.php [L]
-</IfModule>
